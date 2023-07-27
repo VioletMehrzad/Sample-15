@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/bootstrap.css">
+    <link rel="stylesheet" href="./Css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand py-2" href="#">
+                <svg width="45" height="38" viewBox="0 0 45 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.29032 17.6213V17.0697H8.78387V21.2375C8.78387 22.1364 8.51419 22.7983 7.97484 23.2233C7.43548 23.6564 6.70817 23.8729 5.7929 23.8729C5.25355 23.8729 4.73462 23.734 4.23613 23.4562C3.74581 23.1865 3.50065 22.8147 3.50065 22.3407C3.50065 22.2508 3.52925 22.12 3.58645 21.9484L4.00323 20.8697C3.28409 20.551 2.70387 20.0116 2.26258 19.2516C1.82946 18.4916 1.6129 17.6377 1.6129 16.6897C1.6129 15.3985 1.98065 14.328 2.71613 13.4781C3.45978 12.6282 4.48946 12.2033 5.80516 12.2033C6.4671 12.2033 7.10452 12.334 7.71742 12.5955C8.33032 12.857 8.63677 13.1676 8.63677 13.5271C8.63677 13.6661 8.59183 13.8254 8.50194 14.0052L7.81548 15.1329L7.37419 14.9858L7.43548 14.5323C7.46817 14.3362 7.48452 14.1482 7.48452 13.9684C7.48452 13.6497 7.32925 13.3719 7.01871 13.1349C6.70817 12.8979 6.30366 12.7794 5.80516 12.7794C5.05333 12.7794 4.48129 13.1471 4.08903 13.8826C3.70495 14.6099 3.5129 15.5252 3.5129 16.6284C3.5129 17.7235 3.72129 18.6183 4.13806 19.3129C4.56301 19.9994 5.18 20.3426 5.98903 20.3426C6.31591 20.3426 6.63462 20.2772 6.94516 20.1465V17.6213H5.29032ZM5.35161 21.1516C5.06559 21.1516 4.79183 21.1149 4.53032 21.0413V21.4213C4.53032 22.3529 4.72645 22.9291 5.11871 23.1497C5.29849 23.2478 5.54366 23.2968 5.85419 23.2968C6.1729 23.2968 6.43441 23.1824 6.63871 22.9536C6.84301 22.7329 6.94516 22.3979 6.94516 21.9484V20.8329C6.45484 21.0454 5.92366 21.1516 5.35161 21.1516Z" fill="#313131"/>
+                    <path d="M20.2329 4.90968V4.41935H23.1503L25.5897 12.5097H26.2026V13H23.04V12.5097H23.751L23.2974 11.0019H19.9633L19.522 12.5097H20.2329V13H18.1613V12.5097H18.7742L21.0665 4.90968H20.2329ZM21.6181 5.43677L20.1349 10.4503H23.1258L21.6181 5.43677Z" fill="#313131"/>
+                    <path d="M39.5516 13.4902H39.429V21.0902H40.6548V21.5806H36.3645V21.0902H37.5903V13.4902H37.4677C36.9284 13.4902 36.5565 13.5434 36.3522 13.6496C36.1561 13.7558 36.0213 13.9928 35.9477 14.3606L35.7026 15.5741H35.2245L34.8935 13.5148C34.8935 13.3513 34.9303 13.2328 35.0038 13.1593C35.0774 13.0776 35.155 13.0326 35.2368 13.0244C35.3266 13.0081 35.4615 12.9999 35.6413 12.9999H41.378C41.5578 12.9999 41.6886 13.0081 41.7703 13.0244C41.8602 13.0326 41.9419 13.0776 42.0155 13.1593C42.089 13.2328 42.1258 13.3513 42.1258 13.5148L41.7948 15.5741H41.3168L41.0716 14.3606C40.998 13.9928 40.8591 13.7558 40.6548 13.6496C40.4587 13.5434 40.0909 13.4902 39.5516 13.4902Z" fill="#313131"/>
+                    <path d="M20.2329 33.8387H14.729V33.3484H15.4645V25.7484H14.729V25.2581H19.9877C20.1675 25.2581 20.2983 25.2663 20.38 25.2826C20.4699 25.2908 20.5516 25.3357 20.6252 25.4175C20.6987 25.491 20.7355 25.6095 20.7355 25.7729L20.4045 27.8323H19.9265L19.6813 26.6187C19.6077 26.251 19.4688 26.014 19.2645 25.9078C19.0684 25.8015 18.7006 25.7484 18.1613 25.7484H17.3032V29.9407H20.1226V30.4923H17.3032V33.3484H18.4065C18.9376 33.3484 19.3013 33.2953 19.4974 33.1891C19.7017 33.0828 19.8447 32.8458 19.9265 32.4781L20.1716 31.3871H20.6497L20.9806 33.3239C20.9806 33.4873 20.9439 33.6099 20.8703 33.6916C20.7968 33.7652 20.7151 33.8101 20.6252 33.8265C20.5434 33.8347 20.4127 33.8387 20.2329 33.8387Z" fill="#313131"/>
+                    <path d="M25.3813 32.2575C25.3813 32.5762 25.5366 32.854 25.8471 33.091C26.1576 33.328 26.5581 33.4465 27.0484 33.4465C27.5387 33.4465 27.9269 33.328 28.2129 33.091C28.4989 32.854 28.6419 32.5394 28.6419 32.1471C28.6419 31.6486 28.3437 31.2359 27.7471 30.9091L25.9329 29.9407C24.8869 29.3768 24.3639 28.5719 24.3639 27.5258C24.3639 26.8557 24.609 26.2796 25.0994 25.7975C25.5897 25.3153 26.3211 25.0742 27.2936 25.0742C27.9473 25.0742 28.5684 25.205 29.1568 25.4665C29.7452 25.728 30.0394 26.0385 30.0394 26.3981C30.0394 26.537 29.9944 26.6964 29.9045 26.8762L29.3161 28.0039L28.8871 27.8691V26.8394C28.8871 26.4716 28.7237 26.1815 28.3968 25.9691C28.0781 25.7566 27.694 25.6504 27.2445 25.6504C26.8032 25.6504 26.4641 25.7811 26.2271 26.0426C25.9901 26.3041 25.8716 26.6024 25.8716 26.9375C25.8716 27.6076 26.174 28.102 26.7787 28.4207L28.3355 29.242C29.5204 29.863 30.1129 30.6803 30.1129 31.6936C30.1129 32.4618 29.8228 33.042 29.2426 33.4342C28.6705 33.8265 27.9432 34.0226 27.0607 34.0226C26.3987 34.0226 25.7613 33.8919 25.1484 33.6304C24.5355 33.3689 24.229 33.0583 24.229 32.6987C24.229 32.5598 24.274 32.4005 24.3639 32.2207L24.9523 31.0929L25.3813 31.2278V32.2575Z" fill="#313131"/>
+                    <path d="M1.30646 3.37109L17.6204 17.3954C18.2135 17.9052 18.1839 18.8325 17.5596 19.3035L1.30646 31.5646" stroke="black" stroke-width="1.83871"/>
+                    <path d="M43.5968 3.06445L27.2828 17.0887C26.6898 17.5986 26.7193 18.5259 27.3437 18.9969L43.5968 31.258" stroke="black" stroke-width="1.83871"/>
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-lg-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-4 ">
+                  <li class="nav-underline">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-underline">
+                    <a class="nav-link" href="#">Connect</a>
+                  </li>
+                  </li>
+                  <li class="nav-underline">
+                    <a class="nav-link btn btn-dark text-white px-3 rounded-1">
+                        Sign up
+                    </a>
+                  </li>
+                  <li class="nav-underline">
+                    <a class="nav-link">Login</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="main-hero-section position-relative text-white">
+        <img class="w-100" src="./Assets/Images/Group-1.png" alt="">
+        <div class="container">
+            <div class="main-hero-content position-absolute top-50 translate-middle-y">
+                <div class="main-hero-title display-1 font-family-varela">Welcome to Gates</div>
+                <div class="main-hero-subtitle d-none d-lg-block fs-5 text-light opacity-75 py-4">Get the latest news on your favourite mangas, anime and manhwa around the world!</div>
+                <div class="subscription-bar d-none d-lg-flex input-group bg-light bg-opacity-75 p-2 mt-2">
+                    <button class="btn btn-dark fw-semibold text-light px-3 rounded-0 fs-9px">SUBSCRIBE</button>
+                    <input type="email" class="form-control bg-transparent border-0 ps-4" placeholder="Enter your email">
+                    <button class="btn border-0 bg-transparent">
+                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 5.15456H10.1089" stroke="#313131" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.92077 1.03101L11 5L6.92077 8.96899" stroke="#313131" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </button>
+                </div>
+            </div>
+            <div class="main-hero-categories d-none d-lg-flex list-group position-absolute text-end">
+                <a href="">Action</a>
+                <a href="">Comedy</a>
+                <a href="">Drama</a>
+                <a href="">Military</a>
+                <a class="active" href="">Fantasy</a>
+            </div>
+        </div>
+    </section>
+    <main class="container">
+        <section class="new-trendy-section mx-2 px-1 mt-5 pt-3">
+            <div class="section-header position-relative border-1 border-bottom border-dark-subtle mb-4">
+                <h4 class="fw-semibold mt-3 position-relative">New & Trendy</h4>
+            </div>
+            <div class="new-content">
+                <div class="new-card d-flex flex-wrap flex-xl-nowrap">
+                    <img class="w-100" src="./Assets/Images/Rectangle39.png" alt="">
+                    <div class="new-card-desc bg-opacity-75">
+                        <div class="d-flex align-items-center gap-2 text-dark text-opacity-75 fw-medium pb-2">
+                            <span class="pe-2">Fantasy</span>
+                            <svg width="3" height="3" viewBox="0 0 3 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.38551 2.36462C1.08855 2.36462 0.837271 2.26182 0.631681 2.05623C0.426091 1.85064 0.323295 1.59936 0.323295 1.3024C0.323295 1.00544 0.426091 0.754158 0.631681 0.548568C0.837271 0.342977 1.08855 0.240182 1.38551 0.240182C1.67105 0.240182 1.91091 0.342977 2.10508 0.548568C2.31067 0.754158 2.41346 1.00544 2.41346 1.3024C2.41346 1.59936 2.31067 1.85064 2.10508 2.05623C1.91091 2.26182 1.67105 2.36462 1.38551 2.36462Z" fill="#6E6E6E"/>
+                            </svg>
+                            <span>1 Month Ago</span>
+                        </div>
+                        <h4 class="fw-bold">Attack On Titans</h4>
+                        <p class="text-dark fs-5 text-opacity-75">The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-dark text-opacity-75 fw-medium">12 Min Read</span>
+                            <button class="btn fw-bold">
+                                <span>Read Full</span>
+                                <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_74)">
+                                    <path d="M6.53912 14.7229H23.1957" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.4368 19.4819L23.1958 14.7229" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.4368 9.96387L23.1958 14.7229" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_74">
+                                    <rect width="28.5542" height="28.5542" fill="white" transform="translate(0.590332 0.445801)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-card d-flex flex-lg-row-reverse flex-wrap flex-xl-nowrap">
+                    <img class="w-100" src="./Assets/Images/Rectangle42.png" alt="">
+                    <div class="new-card-desc bg-opacity-75">
+                        <div class="d-flex align-items-center gap-2 text-dark text-opacity-75 fw-medium pb-2">
+                            <span class="pe-2">Fantasy</span>
+                            <svg width="3" height="3" viewBox="0 0 3 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.38551 2.36462C1.08855 2.36462 0.837271 2.26182 0.631681 2.05623C0.426091 1.85064 0.323295 1.59936 0.323295 1.3024C0.323295 1.00544 0.426091 0.754158 0.631681 0.548568C0.837271 0.342977 1.08855 0.240182 1.38551 0.240182C1.67105 0.240182 1.91091 0.342977 2.10508 0.548568C2.31067 0.754158 2.41346 1.00544 2.41346 1.3024C2.41346 1.59936 2.31067 1.85064 2.10508 2.05623C1.91091 2.26182 1.67105 2.36462 1.38551 2.36462Z" fill="#6E6E6E"/>
+                            </svg>
+                            <span>1 Month Ago</span>
+                        </div>
+                        <h4 class="fw-bold">Attack On Titans</h4>
+                        <p class="text-dark fs-5 text-opacity-75">The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-dark text-opacity-75 fw-medium">12 Min Read</span>
+                            <button class="btn fw-bold">
+                                <span>Read Full</span>
+                                <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_74)">
+                                    <path d="M6.53912 14.7229H23.1957" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.4368 19.4819L23.1958 14.7229" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.4368 9.96387L23.1958 14.7229" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_74">
+                                    <rect width="28.5542" height="28.5542" fill="white" transform="translate(0.590332 0.445801)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section class="trending-section mx-2 px-1 mt-5 pt-3">
+            <div class="section-header position-relative border-1 border-bottom border-dark-subtle mb-4 d-flex justify-content-between align-items-center">
+                <h4 class="fw-semibold mt-3 position-relative">Now Trending</h4>
+                <button class="btn">
+                    <svg width="82" height="31" viewBox="0 0 82 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.3" cx="15.4015" cy="15.4015" r="13.9015" stroke="#282828" stroke-width="3"/>
+                        <circle cx="65.9185" cy="15.4015" r="13.9015" stroke="#282828" stroke-width="3"/>
+                        <path opacity="0.3" d="M9.76587 14.6945C9.37534 15.085 9.37534 15.7182 9.76587 16.1087L16.1298 22.4726C16.5204 22.8632 17.1535 22.8632 17.544 22.4726C17.9346 22.0821 17.9346 21.449 17.544 21.0584L11.8872 15.4016L17.544 9.74473C17.9346 9.3542 17.9346 8.72104 17.544 8.33051C17.1535 7.93999 16.5203 7.93999 16.1298 8.33051L9.76587 14.6945ZM20.33 14.4016L10.473 14.4016L10.473 16.4016L20.33 16.4016L20.33 14.4016Z" fill="#282828"/>
+                        <path d="M71.5542 14.6945C71.9447 15.085 71.9447 15.7182 71.5542 16.1087L65.1902 22.4726C64.7997 22.8632 64.1666 22.8632 63.776 22.4726C63.3855 22.0821 63.3855 21.449 63.776 21.0584L69.4329 15.4016L63.776 9.74473C63.3855 9.3542 63.3855 8.72104 63.776 8.33051C64.1666 7.93999 64.7997 7.93999 65.1902 8.33051L71.5542 14.6945ZM60.9901 14.4016L70.8471 14.4016L70.8471 16.4016L60.9901 16.4016L60.9901 14.4016Z" fill="#282828"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="trending-content row gy-5 py-3">
+                <div class="col-md-6 col-xl-4">
+                    <div class="trending-card">
+                        <img class="w-100 h-100 rounded-2" src="./Assets/Images/Rectangle-33.png" alt="">
+                        <div class="trending-card-desc pt-3">
+                            <div class="d-flex align-items-center gap-2 text-dark text-opacity-75 fw-medium pb-2 fs-12px">
+                                <span class="pe-2">Fantasy</span>
+                                <svg width="3" height="3" viewBox="0 0 3 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.38551 2.36462C1.08855 2.36462 0.837271 2.26182 0.631681 2.05623C0.426091 1.85064 0.323295 1.59936 0.323295 1.3024C0.323295 1.00544 0.426091 0.754158 0.631681 0.548568C0.837271 0.342977 1.08855 0.240182 1.38551 0.240182C1.67105 0.240182 1.91091 0.342977 2.10508 0.548568C2.31067 0.754158 2.41346 1.00544 2.41346 1.3024C2.41346 1.59936 2.31067 1.85064 2.10508 2.05623C1.91091 2.26182 1.67105 2.36462 1.38551 2.36462Z" fill="#6E6E6E"/>
+                                </svg>
+                                <span>1 Month Ago</span>
+                            </div>
+                            <h5 class="fw-bold">Attack On Titans</h5>
+                            <p class="small text-dark text-opacity-75">lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.</p>
+                            <div class="d-flex justify-content-between align-items-center fs-12px">
+                                <span class="text-dark text-opacity-75 fw-medium">12 Min Read</span>
+                                <button class="btn fw-bold">
+                                    <span>Read Full</span>
+                                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1_74)">
+                                        <path d="M6.53912 14.7229H23.1957" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.4368 19.4819L23.1958 14.7229" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.4368 9.96387L23.1958 14.7229" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1_74">
+                                        <rect width="28.5542" height="28.5542" fill="white" transform="translate(0.590332 0.445801)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="trending-card">
+                        <img class="w-100 h-100 rounded-2" src="./Assets/Images/Rectangle-331.png" alt="">
+                        <div class="trending-card-desc pt-3">
+                            <div class="d-flex align-items-center gap-2 text-dark text-opacity-75 fw-medium pb-2 fs-12px">
+                                <span class="pe-2">History</span>
+                                <svg width="3" height="3" viewBox="0 0 3 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.38551 2.36462C1.08855 2.36462 0.837271 2.26182 0.631681 2.05623C0.426091 1.85064 0.323295 1.59936 0.323295 1.3024C0.323295 1.00544 0.426091 0.754158 0.631681 0.548568C0.837271 0.342977 1.08855 0.240182 1.38551 0.240182C1.67105 0.240182 1.91091 0.342977 2.10508 0.548568C2.31067 0.754158 2.41346 1.00544 2.41346 1.3024C2.41346 1.59936 2.31067 1.85064 2.10508 2.05623C1.91091 2.26182 1.67105 2.36462 1.38551 2.36462Z" fill="#6E6E6E"/>
+                                </svg>
+                                <span>1 Month Ago</span>
+                            </div>
+                            <h5 class="fw-bold">Dr. Stone</h5>
+                            <p class="small text-dark text-opacity-75">lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.</p>
+                            <div class="d-flex justify-content-between align-items-center fs-12px">
+                                <span class="text-dark text-opacity-75 fw-medium">12 Min Read</span>
+                                <button class="btn fw-bold">
+                                    <span>Read Full</span>
+                                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1_74)">
+                                        <path d="M6.53912 14.7229H23.1957" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.4368 19.4819L23.1958 14.7229" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.4368 9.96387L23.1958 14.7229" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1_74">
+                                        <rect width="28.5542" height="28.5542" fill="white" transform="translate(0.590332 0.445801)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="trending-card">
+                        <img class="w-100 h-100 rounded-2" src="./Assets/Images/Rectangle-332.png" alt="">
+                        <div class="trending-card-desc pt-3">
+                            <div class="d-flex align-items-center gap-2 text-dark text-opacity-75 fw-medium pb-2 fs-12px">
+                                <span class="pe-2">Drama</span>
+                                <svg width="3" height="3" viewBox="0 0 3 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.38551 2.36462C1.08855 2.36462 0.837271 2.26182 0.631681 2.05623C0.426091 1.85064 0.323295 1.59936 0.323295 1.3024C0.323295 1.00544 0.426091 0.754158 0.631681 0.548568C0.837271 0.342977 1.08855 0.240182 1.38551 0.240182C1.67105 0.240182 1.91091 0.342977 2.10508 0.548568C2.31067 0.754158 2.41346 1.00544 2.41346 1.3024C2.41346 1.59936 2.31067 1.85064 2.10508 2.05623C1.91091 2.26182 1.67105 2.36462 1.38551 2.36462Z" fill="#6E6E6E"/>
+                                </svg>
+                                <span>1 Month Ago</span>
+                            </div>
+                            <h5 class="fw-bold">Second Chance</h5>
+                            <p class="small text-dark text-opacity-75">lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.</p>
+                            <div class="d-flex justify-content-between align-items-center fs-12px">
+                                <span class="text-dark text-opacity-75 fw-medium">12 Min Read</span>
+                                <button class="btn fw-bold">
+                                    <span>Read Full</span>
+                                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1_74)">
+                                        <path d="M6.53912 14.7229H23.1957" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.4368 19.4819L23.1958 14.7229" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.4368 9.96387L23.1958 14.7229" stroke="#313131" stroke-width="1.78464" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1_74">
+                                        <rect width="28.5542" height="28.5542" fill="white" transform="translate(0.590332 0.445801)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="short-reads-section mx-2 px-1 mt-5 pt-3">
+            <div class="section-header position-relative border-1 border-bottom border-dark-subtle mb-4 d-flex justify-content-between align-items-center">
+                <h4 class="fw-semibold mt-3 position-relative">Short Reads</h4>
+                <button class="btn">
+                    <svg width="82" height="31" viewBox="0 0 82 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.3" cx="15.4015" cy="15.4015" r="13.9015" stroke="#282828" stroke-width="3"/>
+                        <circle cx="65.9185" cy="15.4015" r="13.9015" stroke="#282828" stroke-width="3"/>
+                        <path opacity="0.3" d="M9.76587 14.6945C9.37534 15.085 9.37534 15.7182 9.76587 16.1087L16.1298 22.4726C16.5204 22.8632 17.1535 22.8632 17.544 22.4726C17.9346 22.0821 17.9346 21.449 17.544 21.0584L11.8872 15.4016L17.544 9.74473C17.9346 9.3542 17.9346 8.72104 17.544 8.33051C17.1535 7.93999 16.5203 7.93999 16.1298 8.33051L9.76587 14.6945ZM20.33 14.4016L10.473 14.4016L10.473 16.4016L20.33 16.4016L20.33 14.4016Z" fill="#282828"/>
+                        <path d="M71.5542 14.6945C71.9447 15.085 71.9447 15.7182 71.5542 16.1087L65.1902 22.4726C64.7997 22.8632 64.1666 22.8632 63.776 22.4726C63.3855 22.0821 63.3855 21.449 63.776 21.0584L69.4329 15.4016L63.776 9.74473C63.3855 9.3542 63.3855 8.72104 63.776 8.33051C64.1666 7.93999 64.7997 7.93999 65.1902 8.33051L71.5542 14.6945ZM60.9901 14.4016L70.8471 14.4016L70.8471 16.4016L60.9901 16.4016L60.9901 14.4016Z" fill="#282828"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="short-reads-content row g-4 g-lg-5 pt-3">
+                <div class="col-md-6 col-xl-4">
+                    <div class="short-reads-card row gx-4">
+                        <div class="col-5">
+                            <img class="w-100 h-100" src="./Assets/Images/Group23.png" alt="">
+                        </div>
+                        <div class="col-7">
+                            <div class="short-reads-card-desc d-flex flex-column justify-content-between pt-1">
+                                <h5 class="fw-medium">Akame Ga Kill: Season finale</h5>
+                                <p class="fs-12px text-dark text-opacity-75 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="short-reads-card row gx-4">
+                        <div class="col-5">
+                            <img class="w-100 h-100" src="./Assets/Images/Group24.png" alt="">
+                        </div>
+                        <div class="col-7">
+                            <div class="short-reads-card-desc d-flex flex-column justify-content-between pt-1">
+                                <h5 class="fw-medium">Naruto Uzumaki: Hidden Village</h5>
+                                <p class="fs-12px text-dark text-opacity-75 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="short-reads-card row gx-4">
+                        <div class="col-5">
+                            <img class="w-100 h-100" src="./Assets/Images/Group25.png" alt="">
+                        </div>
+                        <div class="col-7">
+                            <div class="short-reads-card-desc d-flex flex-column justify-content-between pt-1">
+                                <h5 class="fw-medium">Love juice Season Priemere</h5>
+                                <p class="fs-12px text-dark text-opacity-75 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog-section mx-2 px-1 mt-5 pt-4 pb-5">
+            <div class="section-header position-relative border-1 border-bottom border-dark-subtle mb-5">
+                <h4 class="fw-semibold mt-3 position-relative">Blog</h4>
+            </div>
+            <ul class="blog-tabs nav nav-underline gap-4 fs-5 fw-semibold position-relative border-bottom border-dark-subtle mb-4">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">comedy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">fantasy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">drama</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">action</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">history</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">military</a>
+                </li>
+            </ul>
+            <div class="blog-content row g-lg-5">
+                <div class="blog-section-left col-xl-8">
+                    <div class="p-4 border border-1 border-dark-subtle rounded-3">
+                        <div class="row g-5">
+                            <div class="col-lg-6">
+                                <div class="blog-card h-100 d-flex flex-column justify-content-between align-items-start">
+                                    <div>
+                                        <div class="blog-card-img position-relative pb-4">
+                                            <img class="w-100 h-100 rounded-2" src="./Assets/Images/Rectangle-33.png" alt="">
+                                            <div class="btn btn-dark font-family-varela fs-12px py-0 position-absolute start-0 m-3">Fantasy</div>
+                                        </div>
+                                        <div class="blog-card-desc">
+                                            <span class="text-dark text-opacity-75 fw-medium fs-12px">1 Month Ago</span>
+                                            <h5 class="fw-bold py-3">Attack On Titans</h5>
+                                            <p class="small text-dark text-opacity-75">lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn fs-12px fw-bold p-0">
+                                        <span>Load more</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1_273)">
+                                            <path d="M4.16669 10H15.8334" stroke="#313131" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12.5 13.3333L15.8333 10" stroke="#313131" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12.5 6.66663L15.8333 9.99996" stroke="#313131" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_1_273">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex flex-column gap-5">
+                                <div class="blog-sidebar-card row gx-4 pb-2 ps-3">
+                                    <div class="col-5">
+                                        <img class="w-100 h-100 rounded-3" src="./Assets/Images/Group23.png" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="blog-sidebar-card-desc d-flex flex-column justify-content-between pt-1">
+                                            <h5 class="fw-medium">Akame Ga Kill: Season finale</h5>
+                                            <p class="fs-12px text-dark text-opacity-75 m-0">21 March 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-sidebar-card row gx-4 pb-2 ps-3">
+                                    <div class="col-5">
+                                        <img class="w-100 h-100 rounded-3" src="./Assets/Images/Group24.png" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="blog-sidebar-card-desc d-flex flex-column justify-content-between pt-1">
+                                            <h5 class="fw-medium">Naruto Uzumaki: Hidden Village</h5>
+                                            <p class="fs-12px text-dark text-opacity-75 m-0">21 March 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-sidebar-card row gx-4 pb-2 ps-3">
+                                    <div class="col-5">
+                                        <img class="w-100 h-100 rounded-3" src="./Assets/Images/Group25.png" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="blog-sidebar-card-desc d-flex flex-column justify-content-between pt-1">
+                                            <h5 class="fw-medium">Love juice Season Priemere</h5>
+                                            <p class="fs-12px text-dark text-opacity-75 m-0">21 March 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-sidebar-card row gx-4 pb-2 ps-3">
+                                    <div class="col-5">
+                                        <img class="w-100 h-100 rounded-3" src="./Assets/Images/Group25.png" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="short-reads-card-desc d-flex flex-column justify-content-between pt-1">
+                                            <h5 class="fw-medium">Love juice Season Priemere</h5>
+                                            <p class="fs-12px text-dark text-opacity-75 m-0">21 March 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="col-4 d-none d-xl-flex">
+                    <div class="py-3 px-5 border border-1 border-dark-subtle rounded-3 h-100 d-flex flex-column justify-content-between">
+                        <h5>Manga reads</h5>
+                        <div class="sidebar-card row gx-lg-3">
+                            <div class="col">
+                                <img class="w-100 h-100 rounded-1" src="./Assets/Images/Group23.png" alt="">
+                            </div>
+                            <div class="col">
+                                <div class="short-reads-card-desc d-flex flex-column justify-content-between">
+                                    <div class="fs-12px fw-medium pb-2">Akame Ga Kill: Season finale</div>
+                                    <p class="fs-9px text-dark text-opacity-75 m-0 pb-3">21 March 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-card row gx-lg-3">
+                            <div class="col">
+                                <img class="w-100 h-100 rounded-1" src="./Assets/Images/Group24.png" alt="">
+                            </div>
+                            <div class="col">
+                                <div class="short-reads-card-desc d-flex flex-column justify-content-between">
+                                    <div class="fs-12px fw-medium pb-2">Naruto Uzumaki: Hidden Village</div>
+                                    <p class="fs-9px text-dark text-opacity-75 m-0 pb-3">21 March 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-card row gx-lg-3">
+                            <div class="col">
+                                <img class="w-100 h-100 rounded-1" src="./Assets/Images/Group25.png" alt="">
+                            </div>
+                            <div class="col">
+                                <div class="short-reads-card-desc d-flex flex-column justify-content-between">
+                                    <div class="fs-12px fw-medium pb-2">Love juice Season Priemere</div>
+                                    <p class="fs-9px text-dark text-opacity-75 m-0 pb-3">21 March 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-card row gx-lg-3">
+                            <div class="col">
+                                <img class="w-100 h-100 rounded-1" src="./Assets/Images/Group25.png" alt="">
+                            </div>
+                            <div class="col">
+                                <div class="short-reads-card-desc d-flex flex-column justify-content-between">
+                                    <div class="fs-12px fw-medium pb-2">Love juice Season Priemere</div>
+                                    <p class="fs-9px text-dark text-opacity-75 m-0 pb-3">21 March 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-card row gx-lg-3">
+                            <div class="col">
+                                <img class="w-100 h-100 rounded-1" src="./Assets/Images/Group25.png" alt="">
+                            </div>
+                            <div class="col">
+                                <div class="short-reads-card-desc d-flex flex-column justify-content-between">
+                                    <div class="fs-12px fw-medium pb-2">Love juice Season Priemere</div>
+                                    <p class="fs-9px text-dark text-opacity-75 m-0 pb-3">21 March 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>            
+        </section>
+    </main>
+    <footer class="bg-dark mt-5 text-white">
+        <div class="container">
+            <div class="d-flex justify-content-between pt-5">
+                <div class="footer-left">
+                    <a class="footer-brand" href="#">
+                        <svg width="97" height="84" viewBox="0 0 97 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.4839 39.2155V37.9961H18.2064V47.209C18.2064 49.1961 17.6103 50.6594 16.4181 51.5987C15.2258 52.5561 13.6181 53.0348 11.5948 53.0348C10.4026 53.0348 9.25548 52.7278 8.15355 52.1136C7.06968 51.5174 6.52774 50.6955 6.52774 49.6478C6.52774 49.449 6.59097 49.16 6.71742 48.7807L7.63871 46.3961C6.04903 45.6916 4.76645 44.4994 3.79097 42.8194C2.83355 41.1394 2.35484 39.2516 2.35484 37.1561C2.35484 34.3019 3.16774 31.9355 4.79355 30.0568C6.43742 28.1781 8.71355 27.2387 11.6219 27.2387C13.0852 27.2387 14.4942 27.5278 15.849 28.1058C17.2039 28.6839 17.8813 29.3703 17.8813 30.1652C17.8813 30.4723 17.7819 30.8245 17.5832 31.222L16.0658 33.7149L15.0903 33.3897L15.2258 32.3871C15.2981 31.9536 15.3342 31.5381 15.3342 31.1407C15.3342 30.4361 14.991 29.822 14.3045 29.2981C13.6181 28.7742 12.7239 28.5123 11.6219 28.5123C9.96 28.5123 8.69548 29.3252 7.82839 30.951C6.97935 32.5587 6.55484 34.5819 6.55484 37.0207C6.55484 39.4413 7.01548 41.4194 7.93677 42.9549C8.87613 44.4723 10.24 45.231 12.0284 45.231C12.751 45.231 13.4555 45.0865 14.1419 44.7974V39.2155H10.4839ZM10.6194 47.0194C9.9871 47.0194 9.38193 46.9381 8.80387 46.7755V47.6155C8.80387 49.6748 9.23742 50.9484 10.1045 51.4361C10.5019 51.6529 11.0439 51.7613 11.7303 51.7613C12.4348 51.7613 13.0129 51.5084 13.4645 51.0026C13.9161 50.5148 14.1419 49.7742 14.1419 48.7807V46.3149C13.0581 46.7845 11.8839 47.0194 10.6194 47.0194Z" fill="white"/>
+                            <path d="M43.515 11.1161V10.0323H49.9641L55.3563 27.9161H56.7111V29H49.7202V27.9161H51.2918L50.2892 24.5832H42.9189L41.9434 27.9161H43.515V29H38.9357V27.9161H40.2905L45.3576 11.1161H43.515ZM46.577 12.2813L43.2982 23.3639H49.9099L46.577 12.2813Z" fill="white"/>
+                            <path d="M86.2195 30.0837H85.9485V46.8837H88.6582V47.9675H79.1743V46.8837H81.884V30.0837H81.613C80.4208 30.0837 79.5988 30.2011 79.1472 30.4359C78.7137 30.6708 78.4156 31.1946 78.253 32.0075L77.7111 34.6901H76.6543L75.9227 30.1379C75.9227 29.7766 76.004 29.5146 76.1666 29.352C76.3291 29.1714 76.5008 29.072 76.6814 29.054C76.8801 29.0179 77.1782 28.9998 77.5756 28.9998H90.2569C90.6543 28.9998 90.9433 29.0179 91.124 29.054C91.3227 29.072 91.5033 29.1714 91.6659 29.352C91.8285 29.5146 91.9098 29.7766 91.9098 30.1379L91.1782 34.6901H90.1214L89.5795 32.0075C89.4169 31.1946 89.1098 30.6708 88.6582 30.4359C88.2246 30.2011 87.4117 30.0837 86.2195 30.0837Z" fill="white"/>
+                            <path d="M43.5148 75.0643H31.3484V73.9805H32.9742V57.1805H31.3484V56.0966H42.9729C43.3703 56.0966 43.6593 56.1147 43.84 56.1508C44.0387 56.1689 44.2193 56.2682 44.3819 56.4489C44.5445 56.6114 44.6258 56.8734 44.6258 57.2347L43.8942 61.7869H42.8374L42.2955 59.1043C42.1329 58.2914 41.8258 57.7676 41.3742 57.5327C40.9406 57.2979 40.1277 57.1805 38.9355 57.1805H37.0387V66.4476H43.271V67.6669H37.0387V73.9805H39.4774C40.6516 73.9805 41.4555 73.863 41.889 73.6282C42.3406 73.3934 42.6568 72.8695 42.8374 72.0566L43.3793 69.645H44.4361L45.1677 73.9263C45.1677 74.2876 45.0864 74.5585 44.9239 74.7392C44.7613 74.9018 44.5806 75.0011 44.3819 75.0372C44.2013 75.0553 43.9122 75.0643 43.5148 75.0643Z" fill="white"/>
+                            <path d="M54.8956 71.5688C54.8956 72.2734 55.2388 72.8876 55.9253 73.4114C56.6117 73.9353 57.4969 74.1972 58.5808 74.1972C59.6646 74.1972 60.5227 73.9353 61.155 73.4114C61.7872 72.8876 62.1033 72.1921 62.1033 71.325C62.1033 70.223 61.444 69.3108 60.1253 68.5882L56.115 66.4476C53.8027 65.2011 52.6466 63.4218 52.6466 61.1095C52.6466 59.6282 53.1885 58.3547 54.2724 57.2889C55.3562 56.223 56.973 55.6901 59.1227 55.6901C60.5679 55.6901 61.9408 55.9792 63.2414 56.5572C64.5421 57.1353 65.1924 57.8218 65.1924 58.6166C65.1924 58.9237 65.093 59.2759 64.8943 59.6734L63.5937 62.1663L62.6453 61.8682V59.5921C62.6453 58.7792 62.284 58.1379 61.5614 57.6682C60.8569 57.1985 60.0079 56.9637 59.0143 56.9637C58.0388 56.9637 57.2891 57.2527 56.7653 57.8308C56.2414 58.4089 55.9795 59.0682 55.9795 59.8089C55.9795 61.2901 56.6479 62.383 57.9846 63.0876L61.4259 64.903C64.0453 66.2759 65.355 68.0824 65.355 70.3224C65.355 72.0205 64.7137 73.303 63.4311 74.1701C62.1666 75.0372 60.5588 75.4708 58.6079 75.4708C57.1446 75.4708 55.7356 75.1818 54.3808 74.6037C53.0259 74.0256 52.3485 73.3392 52.3485 72.5443C52.3485 72.2372 52.4479 71.885 52.6466 71.4876L53.9472 68.9947L54.8956 69.2927V71.5688Z" fill="white"/>
+                            <path d="M1.67731 7.4519L37.7398 38.453C39.0507 39.5799 38.9854 41.6298 37.6052 42.6709L1.67731 69.7745" stroke="white" stroke-width="4.06452"/>
+                            <path d="M95.1613 6.77405L59.0989 37.7751C57.7879 38.9021 57.8533 40.9519 59.2334 41.9931L95.1613 69.0966" stroke="white" stroke-width="4.06452"/>
+                        </svg>
+                    </a>
+                    <p class="py-4">Gates is a blog that focuses on Japanese art and anime. They feature information on Otaku conventions and other anime topics. Hear from famous anime filmmakers and artists as well as plenty of news about the art of cartoon creation in the Japanese culture.</p>
+                </div>
+                <div class="footer-right pe-5 me-5">
+                    <div class="subscription-bar input-group bg-light bg-opacity-75 p-2">
+                        <button class="btn btn-dark fw-semibold text-light px-3 rounded-0 fs-9px">SUBSCRIBE</button>
+                        <input type="email" class="form-control bg-transparent border-0 ps-4" placeholder="Enter your email">
+                        <button class="btn border-0 bg-transparent">
+                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 5.15456H10.1089" stroke="#313131" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.92077 1.03101L11 5L6.92077 8.96899" stroke="#313131" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                        
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright border-1 border-top border-dark-subtle mt-5">
+            <div class="container">
+                <p class="m-0 py-4">
+                    @copyright 2021 Gates
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

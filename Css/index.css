@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Varela&display=swap');
+
+:root {
+    --font-family-varela: 'Varela', sans-serif;
+    --dark-gray: #313131;
+    --gradient-dark: linear-gradient(95.32deg, var(--dark-gray) 0%, #000000 101.64%);
+}
+
+@media screen and (min-width: 992px) {
+    .new-card img {
+        width: 50%;
+        object-fit: cover;
+    }
+    .subscription-bar {
+        width: 25.375rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .blog-content {
+        --bs-gutter-x: 4.5rem;
+        --bs-gutter-y: 4.5rem;
+    }
+}
+
+.btn-dark {
+    background:var(--gradient-dark)
+}
+
+.bg-dark {
+    background:var(--gradient-dark);
+}
+
+.nav-underline .nav-link {
+    color: var(--dark-gray);
+}
+
+/* utils */
+.font-family-varela {
+    font-family: var(--font-family-varela);
+}
+
+.fs-12px {
+    font-size: 0.75rem;
+}
+
+.fs-9px {
+    font-size: 0.5625rem;
+}
+
+
+/* --------------- */
+
+.main-hero-content {
+    width: 40%;
+}
+
+.main-hero-categories {
+    top:75%;
+    right: 0%;
+    transform: translate(-100%);
+}
+
+.main-hero-categories a {
+    color: var(--bs-gray-500);
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+}
+
+.main-hero-categories a:hover {
+    color: var(--bs-white);
+}
+
+.main-hero-categories a.active {
+    color: var(--bs-white);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.main-hero-categories a.active::after {
+    content: "";
+    display: block;
+    width: 0.375rem;
+    height: 0.375rem;
+    background-color: var(--bs-white);
+    border-radius: 50%;
+}
+
+.section-header::before {
+    content: "";
+    display: block;
+    height: 0.125rem;
+    width: 1.3125rem;
+    background-color: var(--dark-gray);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -0.0625rem;
+    left: 0;
+}
+
+.new-card-desc {
+    background: url(../Assets/Images/Rectangle40.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5rem;
+}
+
+@media screen and (min-width: 576px) {
+    .new-card-desc {
+        padding: 4.375rem 5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .trending-content {
+        --bs-gutter-x: 6.875rem;
+    }
+}
+
+.blog-tabs::before {
+    content: "";
+    display: block;
+    height: 0.125rem;
+    width: 3.75rem;
+    background-color: var(--dark-gray);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -0.0625rem;
+    left: 0;
+}
+
+footer p {
+    line-height: 237.097%;
+    max-width: 32.5rem;
+}
